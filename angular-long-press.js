@@ -91,6 +91,20 @@
                         }
 
                     }
+                    
+                    //right-click acts as long press too
+                    function onContextMenu(evt) {
+                    	evt.preventDefault();
+                    	var functionHandler = $parse($attrs.onLongPress);
+                    	$scope.longPressSent = true;
+                        // If the touchend event hasn't fired,
+                        // apply the function given in on the element's on-long-press attribute
+                        $scope.$apply(function () {
+                            functionHandler($scope, {
+                                $event: evt
+                            });
+                        });
+                    }
                 }
             };
         }]);
