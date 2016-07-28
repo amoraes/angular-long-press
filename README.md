@@ -1,6 +1,8 @@
 # angular-long-press
 Long press support for both desktop and mobile when used in AngularJS framework
 
+This is a fork to accept right click as a long press and show customized context menus.
+
 Thank you
 [GitHub Gist](https://gist.github.com/BobNisco/9885852)
 , [grrrian](https://github.com/grrrian) for [Prevent long press while scrolling](https://github.com/puneethrai/angular-long-press/issues/3)
